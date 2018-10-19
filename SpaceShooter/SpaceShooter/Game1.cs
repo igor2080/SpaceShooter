@@ -155,6 +155,8 @@ namespace Shooter_Game
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
+            width = graphics.PreferredBackBufferWidth = 1024;
+            height = graphics.PreferredBackBufferHeight = 768;
         }
 
         /// <summary>
@@ -167,8 +169,7 @@ namespace Shooter_Game
         {
             // TODO: Add your initialization logic here
             gs = GameScreen.Menu;
-            width = graphics.PreferredBackBufferWidth = 800;
-            height = graphics.PreferredBackBufferHeight = 600;
+            
             playerRect = new Rectangle(368, 400, 35, 35);
             arrowRect = new Rectangle(270, 110, 20, 20);
             maxA = maxExp.Length;
