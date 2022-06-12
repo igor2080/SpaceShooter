@@ -232,7 +232,7 @@ namespace Shooter_Game
             }
 
         }
-        static string fullpath = @"C:\j\igor.sav";
+        static string fullpath = @"C:\spaceshooter.sav";
         public static SaveGameData loadGame(string name)
         {
             try
